@@ -24,7 +24,7 @@ app.get('/results', (req, res) => {
 
     let query = req.query.search
 
-    request('https://api.themoviedb.org/3/search/movie?api_key=89af04b9e59028670c97874bb0ca4f5e&query='+ query, (error, response, body) => {
+    request('https://api.themoviedb.org/3/search/movie?api_key={Place your Api Key Here}&query='+ query, (error, response, body) => {
         if(error)
         {
             console.log(error)
